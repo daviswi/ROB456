@@ -1,0 +1,10 @@
+<launch>
+  <!-- Launch World -->
+  <node pkg="stage_ros" type="stageros" name="simulator" args="$(find rob456_project)/worlds/officeWorld.world"/>
+
+<!-- Launch final.py -->
+  <!-- <node pkg="rob456_project" type="final.py" name="final" output="screen"/> -->
+
+  <!-- Visualize -->
+  <node pkg="rviz" type="rviz" name="rviz"/>
+</launch>
